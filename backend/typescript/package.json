@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index",
+    "dev": "ts-node src/index",
     "lint": "prettier --write '**/*.js'",
     "lint-check": "prettier -c '**/*.js'"
   },
@@ -15,6 +15,7 @@
     "husky": "^4.2.0",
     "lint-staged": "^10.0.2",
     "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
   "prettier": {
@@ -26,7 +27,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn lint-check"
+      "yarn lint"
     ]
   },
   "husky": {
