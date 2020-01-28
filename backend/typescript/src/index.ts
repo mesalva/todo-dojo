@@ -2,4 +2,8 @@ import * as express from 'express'
 
 const app = express()
 
-app.use((req, res) => res.send('naaa')).listen(3000)
+app.get('/users', (req, res) => {
+  res.json({ message: 'nothing' })
+})
+
+app.listen(3000)
